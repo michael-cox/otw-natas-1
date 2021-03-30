@@ -36,10 +36,13 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 
 #### What sins are evidenced in this challenge
 * [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
 * [CWE-540: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/540.html)
+
 
 #### How could those sins be mitigated
 * Remove the password from the HTML (do not store sensitive information in any publicly accessible files)
+* Use HTTPS (securely encrypt any sensitive information going through public channels)
 * Securely hash passwords
 
 
