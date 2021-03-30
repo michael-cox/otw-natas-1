@@ -120,7 +120,7 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 * Use HTTPS (securely encrypt any sensitive information going through public channels)
 * Securely hash passwords
 * Disable automatic directory listings and hide directory listings
-* Reconfigure permissions on `files` and `users.txt` so that they are not accessible by the public
+* Reconfigure permissions on `s3cr3t` and `users.txt` so that they are not accessible by the public
 
 
 
