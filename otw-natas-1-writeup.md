@@ -51,17 +51,23 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 01
 
 #### Credentials
-** Credentials here **
+`natas2:ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi`
 
 #### How you passed the challenge
-** Steps here **
+* The password is stored in a comment in the html page
+  * Use browser dev tools
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-540: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/540.html)
+* [CWE-656: Reliance on Security Through Obscurity](https://cwe.mitre.org/data/definitions/656.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
-
+* Remove the password from the HTML (do not store sensitive information in any publicly accessible files)
+* Use HTTPS (securely encrypt any sensitive information going through public channels)
+* Securely hash passwords
+* Use these mitigations rather than attempting to hide the vulnerability by removing functionality
 
 
 ---
