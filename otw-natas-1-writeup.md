@@ -85,12 +85,11 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 #### What sins are evidenced in this challenge
 * [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
 * [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-* [CWE-540: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/540.html)
 * [CWE-548: Exposure of Information Through Directory Listing](https://cwe.mitre.org/data/definitions/548.html)
+* [CWE-552: Files or Directories Accessible to External Parties](https://cwe.mitre.org/data/definitions/552.html)
 * [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html)
 
 #### How could those sins be mitigated
-* Remove the password from the HTML (do not store sensitive information in any publicly accessible files)
 * Use HTTPS (securely encrypt any sensitive information going through public channels)
 * Securely hash passwords
 * Disable automatic directory listings and hide directory listings
