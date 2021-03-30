@@ -74,16 +74,25 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 02
 
 #### Credentials
-** Credentials here **
+`natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14`
 
 #### How you passed the challenge
-** Steps here **
+* Note that there is an `<img>` tag including a relative path to `files`
+* Visit `/files`
+* Notice the directory index includes `users.txt`
+* View `users.txt`
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-540: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/540.html)
+* [CWE-548: Exposure of Information Through Directory Listing](https://cwe.mitre.org/data/definitions/548.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Remove the password from the HTML (do not store sensitive information in any publicly accessible files)
+* Use HTTPS (securely encrypt any sensitive information going through public channels)
+* Securely hash passwords
+* Disable automatic directory listings and hide directory listings
 
 
 
