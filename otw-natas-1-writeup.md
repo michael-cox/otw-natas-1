@@ -2,8 +2,8 @@
 
 ## Student Information
 
-* Student name: **enter name here**
-* NetId: **enter NetId here**
+* Student name: **Michael Cox**
+* NetId: **mcox59**
 
 
 ## Project Description
@@ -29,16 +29,18 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 00
 
 #### Credentials
-** Credentials here **
+`natas1:gtVrDuiDfck831PqWsLEZy5gyDz1clto`
 
 #### How you passed the challenge
-** Steps here **
+* The password is stored in a comment in the html page
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
+* [CWE-540: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/540.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Remove the password from the HTML (do not store sensitive information in any publicly accessible files)
+* Securely hash passwords
 
 
 
