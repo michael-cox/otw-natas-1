@@ -141,21 +141,24 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 * Use proper authentication measures rather than relying on the client to report refferer
 
 
-
 ---
 ### Natas 05
 
 #### Credentials
-** Credentials here **
+`natas6:aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1`
 
 #### How you passed the challenge
-** Steps here **
+* Notice that there is a `loggedin` cookie
+* Change its value to `1`
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
+* [CWE-784: Reliance on Cookies without Validation and Integrity Checking in a Security Decision](https://cwe.mitre.org/data/definitions/784.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Use proper authentication measures rather than relying on modifiable cookies
+* If using cookies, use tokens that are not guessable and validate them
 
 
 
