@@ -101,16 +101,26 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 03
 
 #### Credentials
-** Credentials here **
+`natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ`
 
 #### How you passed the challenge
-** Steps here **
+* Visit `/robots.txt`
+* Notice the exposed `s3cr3t` directory
+* Visit that directory
+* Visit `users.txt`
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-548: Exposure of Information Through Directory Listing](https://cwe.mitre.org/data/definitions/548.html)
+* [CWE-552: Files or Directories Accessible to External Parties](https://cwe.mitre.org/data/definitions/552.html)
+* [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Use HTTPS (securely encrypt any sensitive information going through public channels)
+* Securely hash passwords
+* Disable automatic directory listings and hide directory listings
+* Reconfigure permissions on `files` and `users.txt` so that they are not accessible by the public
 
 
 
