@@ -166,16 +166,23 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 06
 
 #### Credentials
-** Credentials here **
+`natas7:7z3hEENjQtflzgnT29q7wAvMNfZdh0i9`
 
 #### How you passed the challenge
-** Steps here **
+* Notice that the source code includes `includes/secret.inc`
+* Visit this file to get the secret
+* Input the secret
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-552: Files or Directories Accessible to External Parties](https://cwe.mitre.org/data/definitions/552.html)
+* [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Do not leak server-side source code to unauthorized users
+* Assign permissions to `secrets.inc` such that it is not readable to unauthorized users
+* Use HTTPS
 
 
 
