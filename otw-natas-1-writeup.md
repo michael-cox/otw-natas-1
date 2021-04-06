@@ -278,16 +278,25 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 11
 
 #### Credentials
-** Credentials here **
+`natas12:EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3`
 
 #### How you passed the challenge
-** Steps here **
+* Reverse engineer the key by
+    * Base64 decode the default data cookie
+    * XOR the default data string from the source code and the base64 decoded cookie
+    * Grab only the string that is repeated `qw8J`
+* Create a new cookie with `showpassword:yes` and using the encoding algorithm they made
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
+* [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-321: Use of Hard-coded Cryptographic Key](https://cwe.mitre.org/data/definitions/321.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Do not leak source code to unauthorized actors
+* Securely encrypt crptographic keys and do not include them in source code
+* Use HTTPS
 
 
 
