@@ -331,15 +331,23 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 13
 
 #### Credentials
-** Credentials here **
+`natas14:Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1`
 
 #### How you passed the challenge
-** Steps here **
+* Same thing, but add JPEG magic code to the front of the file
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-434: Unrestricted Upload of File with Dangerous Type](https://cwe.mitre.org/data/definitions/434.html)
+* [CWE-472: External Control of Assumed-Immutable Web Parameter](https://cwe.mitre.org/data/definitions/472.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Do not leak source code to unauthorized actors
+* Use a library for uploading images that sanitizes/validates input properly
+    * Verify that the image is an image
+* Do not rely on hidden fields to upload files to a server
+* Use HTTPS
+
 
 
