@@ -304,11 +304,11 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 12
 
 #### Credentials
-`natas13:EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3`
+`natas13:jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY`
 
 #### How you passed the challenge
 * Notice that the extension of the file is kept throughout the random string generation
-* Make a dummy php script with something like `<?php print file_get_contents('/etc/natas_webpass/natas12') ?>`
+* Make a dummy php script with something like `<?php print file_get_contents('/etc/natas_webpass/natas13') ?>`
 * Change the hidden field uploadfile `.jpg` to `.php`
 * Submit and visit that file
 
@@ -323,6 +323,7 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 * Use a library for uploading images that sanitizes/validates input properly
     * Verify that the image is an image
 * Do not rely on hidden fields to upload files to a server
+* Use HTTPS
 
 
 
