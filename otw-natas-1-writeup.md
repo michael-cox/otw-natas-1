@@ -232,16 +232,21 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 09
 
 #### Credentials
-** Credentials here **
+`natas10:nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu`
 
 #### How you passed the challenge
-** Steps here **
+* Notice that there is a command injection vulnerability with unsanitized, unparamaterized shell commands with user input
+* Enter `"" /dev/null; cat /etc/natas_webpass/natas10 #` in the form
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')](https://cwe.mitre.org/data/definitions/78.html)
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Do not leak source code to unauthorized actors
+* Parameterize and sanitize any shell commands or avoid the use of shell commands
+* Use HTTPS
 
 
 
