@@ -209,16 +209,22 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 08
 
 #### Credentials
-** Credentials here **
+`natas9:W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl`
 
 #### How you passed the challenge
-** Steps here **
+* Notice encoded secret and encoding algorithm in binary
+* Decode secret
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
+* [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-798: Use of Hard-coded Credentials](https://cwe.mitre.org/data/definitions/798.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Do not leak source code to unauthorized actors
+* Securely encrypt passwords and do not hard code them in source code
+* Use HTTPS
 
 
 
