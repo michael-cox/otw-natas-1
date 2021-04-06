@@ -190,16 +190,18 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Natas 07
 
 #### Credentials
-** Credentials here **
+`natas8:DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe`
 
 #### How you passed the challenge
-** Steps here **
+* Notice that the page get parameter inclues a relative path, possible LFI
+* Attempt setting it to `/etc/natas_webpass/natas8`
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')](https://cwe.mitre.org/data/definitions/22.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Configure web server to be restricted to only necessary directories
+* Sanitize/whitelist input for only valid pages
 
 
 
